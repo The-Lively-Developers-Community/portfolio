@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 /* Reset Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* General Styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Tilt Neon', cursive;
+  background-color: rgba(255, 228, 49, 0.783);
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #87acd8d0;
+  color: black;
   padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 nav {
@@ -23,6 +27,7 @@ nav {
 }
 
 .logo {
+  color: black;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
@@ -38,12 +43,15 @@ nav {
 }
 
 .nav-links li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
+
+
 .hero {
-  background-image: url('https://via.placeholder.com/1500x500');
+  /* background-image: url('https://via.placeholder.com/1500x500'); */
+  background-image: url('https://media.discordapp.net/attachments/930752045554753540/1078318367800295444/pexels-ivan-samkov-7213216.png?width=1441&height=480');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -72,9 +80,10 @@ nav {
 }
 
 .about {
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 50px;
   text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .about h2 {
@@ -109,10 +118,11 @@ nav {
 
 .project {
   margin-bottom: 30px;
+  
 }
 
 .project img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -127,8 +137,8 @@ nav {
 }
 
 .project a {
-  background-color: #333;
-  color: #fff;
+  background-color: aliceblue;
+  color: #000000;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
@@ -137,9 +147,10 @@ nav {
 }
 
 .blog {
-  background-color: #f2f2f2;
+  background-color: #ff0f37a4;
   padding: 50px;
   text-align: center;
+  color: aliceblue;
   }
   
   .blog h2 {
@@ -152,7 +163,7 @@ nav {
   }
   
   .post img {
-  width: 100%;
+  width: 50%;
   height: auto;
   }
   
@@ -167,8 +178,8 @@ nav {
   }
   
   .post a {
-  background-color: #333;
-  color: #fff;
+  background-color: aliceblue;
+  color: #000000;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
@@ -220,3 +231,48 @@ nav {
   }
   }
   
+  .bn13 {
+    display: inline-block;
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 5s infinite linear;
+    position: relative;
+  }
+  
+  .bn13:hover {
+    background-color: white;
+    color: #000000;
+  }
+  
+  @keyframes bn13bouncy {
+    0% {
+      top: 0em;
+    }
+    40% {
+      top: 0em;
+    }
+    43% {
+      top: -0.3em;
+    }
+    46% {
+      top: 0em;
+    }
+    48% {
+      top: -0.2em;
+    }
+    50% {
+      top: 0em;
+    }
+    100% {
+      top: 0em;
+    }
+  }
