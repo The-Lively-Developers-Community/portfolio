@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* General Styles */
+body {
+  font-family: 'Tilt Neon', cursive;
+  background-color: rgba(255, 228, 49, 0.783);
+}
+
+header {
+  background-color: #87acd8d0;
+  color: black;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+.hero {
+  /* background-image: url('https://via.placeholder.com/1500x500'); */
+  background-image: url('https://media.discordapp.net/attachments/930752045554753540/1078318367800295444/pexels-ivan-samkov-7213216.png?width=1441&height=480');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.about a {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.projects {
+  padding: 50px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.project {
+  margin-bottom: 30px;
+  
+}
+
+.project img {
+  width: 50%;
+  height: auto;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.project a {
+  background-color: aliceblue;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.blog {
+  background-color: #ff0f37a4;
+  padding: 50px;
+  text-align: center;
+  color: aliceblue;
+  }
+  
+  .blog h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  }
+  
+  .post {
+  margin-bottom: 30px;
+  }
+  
+  .post img {
+  width: 50%;
+  height: auto;
+  }
+  
+  .post h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+  
+  .post p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  }
+  
+  .post a {
+  background-color: aliceblue;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  }
+  
+  footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  }
+  
+  footer p {
+  font-size: 16px;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .nav-links {
+  display: none;
+  }
+  
+  .logo {
+  margin-right: auto;
+  margin-left: auto;
+  }
+  
+  .nav-icon {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  }
+  
+  .nav-links.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  }
+  
+  .nav-links.active li {
+  margin: 10px 0;
+  }
+  }
+  
+  .bn13 {
+    display: inline-block;
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 5s infinite linear;
+    position: relative;
+  }
+  
+  .bn13:hover {
+    background-color: white;
+    color: #000000;
+  }
+  
+  @keyframes bn13bouncy {
+    0% {
+      top: 0em;
+    }
+    40% {
+      top: 0em;
+    }
+    43% {
+      top: -0.3em;
+    }
+    46% {
+      top: 0em;
+    }
+    48% {
+      top: -0.2em;
+    }
+    50% {
+      top: 0em;
+    }
+    100% {
+      top: 0em;
+    }
+  }
