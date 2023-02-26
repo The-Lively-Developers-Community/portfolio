@@ -1,33 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 /* Reset Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 /* General Styles */
 body {
   font-family: 'Tilt Neon', cursive;
-  background-color: rgba(255, 228, 49, 0.783);
+  background-color: rgba(255, 255, 255, 0.783);
 }
 
 button {
   cursor: pointer;
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
 
 
 header {
-  background-color: #87acd8d0;
-  color: black;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   padding: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   position: fixed;
   width: 100%;
   display: block;
@@ -41,7 +44,7 @@ nav {
 }
 
 .logo {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
@@ -57,7 +60,7 @@ nav {
 }
 
 .nav-links li a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -65,13 +68,16 @@ nav {
 
 .hero {
   /* background-image: url('https://via.placeholder.com/1500x500'); */
-  background-image: url('https://media.discordapp.net/attachments/930752045554753540/1078318367800295444/pexels-ivan-samkov-7213216.png?width=1441&height=480');
+  background-image: url('https://media.discordapp.net/attachments/943142345371709460/1057910613696843776/image.png?width=1249&height=668');
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #ffffff;
   padding: 50px;
+  height: max-content;
   text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
 
 .hero h1 {
   margin-top: 3em;
@@ -92,6 +98,7 @@ nav {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .about {
@@ -124,6 +131,7 @@ nav {
 .projects {
   padding: 50px;
   text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .projects h2 {
@@ -133,7 +141,7 @@ nav {
 
 .project {
   margin-bottom: 30px;
-  
+
 }
 
 .project img {
@@ -152,8 +160,8 @@ nav {
 }
 
 .project a {
-  background-color: aliceblue;
-  color: #000000;
+  background-color: #333;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
@@ -162,132 +170,169 @@ nav {
 }
 
 .blog {
-  background-color: #ff0f37a4;
+  background-color: #ffffffa4;
   padding: 50px;
   text-align: center;
-  color: aliceblue;
-  }
-  
-  .blog h2 {
+  color: rgb(0, 0, 0);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.blog h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  }
-  
-  .post {
+}
+
+.post {
   margin-bottom: 30px;
-  }
-  
-  .post img {
+}
+
+.post img {
   width: 50%;
   height: auto;
-  }
-  
-  .post h3 {
+}
+
+.post h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  }
-  
-  .post p {
+}
+
+.post p {
   font-size: 18px;
   margin-bottom: 20px;
-  }
-  
-  .post a {
-  background-color: aliceblue;
-  color: #000000;
+}
+
+.post a {
+  background-color: #333;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
   border-radius: 5px;
   text-decoration: none;
-  }
-  
-  footer {
-  background-color: #333;
-  color: #fff;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
-  }
-  
-  footer p {
+}
+
+footer p {
   font-size: 16px;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
   .nav-links {
-  display: none;
+    display: none;
   }
-  
+
   .logo {
-  margin-right: auto;
-  margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
   }
-  
+
   .nav-icon {
-  display: block;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
   }
-  
+
   .nav-links.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #333;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222222;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
   }
-  
+
   .nav-links.active li {
-  margin: 10px 0;
+    margin: 10px 0;
   }
+}
+
+.bn13 {
+  font-family: 'Tilt Neon', cursive;
+  display: inline-block;
+  padding: 0.65em 1.6em;
+  border: 3px solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  animation: bn13bouncy 5s infinite linear;
+  position: relative;
+  overflow: hidden;
+}
+
+.bn13:hover {
+  background-color: white;
+  color: #000000;
+}
+
+@keyframes bn13bouncy {
+  0% {
+    top: 0em;
   }
-  
-  .bn13 {
-    display: inline-block;
-    padding: 0.65em 1.6em;
-    border: 3px solid #ffffff;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: #ffffff;
-    text-align: center;
-    transition: all 0.2s;
-    animation: bn13bouncy 5s infinite linear;
-    position: relative;
+
+  40% {
+    top: 0em;
   }
-  
-  .bn13:hover {
-    background-color: white;
-    color: #000000;
+
+  43% {
+    top: -0.3em;
   }
-  
-  @keyframes bn13bouncy {
-    0% {
-      top: 0em;
-    }
-    40% {
-      top: 0em;
-    }
-    43% {
-      top: -0.3em;
-    }
-    46% {
-      top: 0em;
-    }
-    48% {
-      top: -0.2em;
-    }
-    50% {
-      top: 0em;
-    }
-    100% {
-      top: 0em;
-    }
+
+  46% {
+    top: 0em;
   }
+
+  48% {
+    top: -0.2em;
+  }
+
+  50% {
+    top: 0em;
+  }
+
+  100% {
+    top: 0em;
+  }
+}
+
+.contact {
+  width: auto;
+  align-items: center;
+}
+
+
+.bn14 {
+  font-family: 'Tilt Neon', cursive;
+
+  display: inline-block;
+  padding: 0.65em 1.6em;
+  border: 3px solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.bn14:hover {
+  background-color: white;
+  color: #000000;
+}
