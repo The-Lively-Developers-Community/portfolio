@@ -27,6 +27,8 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("home").style.top = "0";
+    document.getElementById("home").style.backgroundColor = "black";
+    document.getElementById("home").style.colour = "white";
   } else {
     document.getElementById("home").style.top = "-70px";
   }

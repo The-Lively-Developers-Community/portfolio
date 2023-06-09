@@ -28,8 +28,8 @@ a:active {
 
 
 header {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
+  background-color: #00000000;
+  color: rgb(0, 0, 0);
   padding: 20px;
   position: fixed;
   width: 100%;
@@ -44,7 +44,7 @@ nav {
 }
 
 .logo {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
@@ -60,7 +60,7 @@ nav {
 }
 
 .nav-links li a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ nav {
 
 .hero {
   /* background-image: url('https://via.placeholder.com/1500x500'); */
-  background-image: url('/public/home_image.png');
+  background-image: url('https://cdn.discordapp.com/attachments/930752045554753540/1079378923982434384/pexels-polina-zimmerman-3747486.jpg');
   background-size: cover;
   background-position: center;
   color: #ffffff;
